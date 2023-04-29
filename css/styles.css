@@ -47,8 +47,6 @@ img {
 
 /* body - color text paragraf */
 body {
-  /* max-width: 1440px; */
-
   background-color: var(--background-color); /*#ffffff;*/
   color: var(--body-color); /*#434455;*/
 
@@ -96,8 +94,6 @@ body {
   /* background-color: tomato;  */
   height: 72px;
   border-bottom: 1px solid var(--color-border-hader);
-  /* min-width: 1128px; */
-  /* border-bottom-color: var(--color-border-hader); */
 }
 .header-div {
   display: flex;
@@ -118,21 +114,17 @@ body {
   text-transform: uppercase;
 }
 .header-logo:hover {
-  /* color: var(--background-color);
-  background-color: var(--background-btn-primary); */
 }
 
 .list-nav {
   display: flex;
   padding: 0;
-  /* padding: 24px 0 24px 0;*/
 }
 
 .list-nav .item {
 }
 .item-nav:not(:last-child) {
   margin-right: 40px;
-  /* outline: 1px solid black; */
 }
 
 .logo-right {
@@ -143,22 +135,17 @@ body {
   display: flex;
   align-items: center;
   margin-right: 332px;
-
-  /* background-color: tomato;  */
 }
 nav {
   margin-top: 0;
   margin-bottom: 0;
-  /* outline: 1px solid red; */
 }
 .header.nav-div {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* .list-nav > .item { */
+
 .item-nav {
-  /* padding-top: 24px;
-  padding-bottom: 24px;*/
 }
 .link-header {
   padding-top: 24px;
@@ -199,16 +186,10 @@ nav {
 .address-list .address-item:not(:last-child) {
   margin-right: 40px;
 }
-/* .laddress-item + .address-item {
-  margin-left: 40px;
-} */
 
 .link-addr {
   display: block;
   color: var(--body-color);
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
-  /* outline: 1px solid red;*/
 }
 .link-addr:hover,
 .link-addr:focus {
@@ -218,11 +199,26 @@ nav {
 /* -----------------------main (hero) -----------------------------------------------------*/
 .hero {
   background-color: var(--background-color-hero);
+
   /* width: 1440px; */
   min-width: 1440px;
   height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
+}
+.overlay {
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/background_hero.jpg');
+  /* background-image: linear-gradient(to right, red, blue),
+    url('../images/background_hero.jpg');   */
+  background-position: center;
+  background-size: cover;
+  /* background-size: contain; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .div-hero {
 }
@@ -237,7 +233,7 @@ nav {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 .btn-hero {
   box-sizing: border-box;
