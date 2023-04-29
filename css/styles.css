@@ -200,21 +200,23 @@ nav {
 .hero {
   background-color: var(--background-color-hero);
 
-  /* width: 1440px; */
   min-width: 1440px;
+  /* max-width: 1440px; */
   height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
 }
 .overlay {
+ /* max-width: 1440px; */
+
+ margin: 0 auto;
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url('../images/background_hero.jpg');
-  /* background-image: linear-gradient(to right, red, blue),
-    url('../images/background_hero.jpg');   */
+
   background-position: center;
   background-size: cover;
   /* background-size: contain; */
@@ -291,6 +293,26 @@ nav {
 .about-item {
   width: 264px;
 }
+.about_item-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--logocolor-right-footer) ;
+  height : 112px;
+  margin-bottom: 8px ;
+}
+
+.about_item-icon-div svg{
+  width: 64px;
+  height: 64px;
+ }
+/* delete */
+.icon {
+  background-color:  tomato;
+  fill: blue;
+  stroke: aqua;
+}
+
 .about-item:not(:last-child) {
   margin-right: 24px;
 }
@@ -337,6 +359,7 @@ nav {
 
 .ourteam-list-item {
   width: 264px;
+  padding-bottom: 32px;
   /* height: 380px; */
   background-color: var(--background-color); /* #ffffff; */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -366,6 +389,83 @@ nav {
   padding-bottom: 32px;
   padding-left: 16px;
   padding-right: 16px;
+}
+.socialnet-list {
+  display: flex;
+ /* margin: o auto; */
+  height: 40px;
+  gap: 24px;
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+}
+
+.socialnet-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+ width: 40px;
+  height: 40px; 
+  background-color: blue;
+  border-radius: 50%;
+
+
+}
+.socialnet-item > a {
+  width: 16px;
+  height: 16px;
+}
+
+.socialnet-svg {
+  margin: auto;
+  width: 16px;
+  height: 16px;
+  
+  
+}
+
+.socialnet-icon {
+  /* width: 16px;
+  height: 16px; */
+  
+}
+
+
+
+/* -------------------section4 You team -------------- */
+.customers-div {
+  padding: 120px 0;
+
+}
+.customers-list {
+   display: flex;
+   padding-top: 72px;
+   gap: 24px;
+}
+.customers-item {
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
+  border: 1px solid #8E8F99;
+border-radius: 4px;
+ 
+}
+.customers-item:hover {
+
+}
+.customers-svg {
+  width: 104px;
+  height: 56px;
+
+ 
+}
+.customers-svg:hover {
+ fill: red;
+stroke: red; 
+}
+.customers-icon {
+  width: 54px;
+  height: 56px;
+
 }
 /*---------------------------- footer -------------------------------------------------------------------------------------*/
 .footer {
@@ -464,6 +564,11 @@ nav {
 }
 .works-item {
   flex-basis: calc((100% - 2 * 24px) / 3);
+}
+.works-item:hover,
+.works-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .link-works:hover,
 .link-works:focus {
