@@ -326,15 +326,7 @@ nav {
 }
 
 .about-svg {
-  /* width: 64px;
-  height: 64px; */
-}
-/* delete */
-.icon {
-  background-color: tomato;
-  fill: blue;
-  stroke: aqua;
-}
+ }
 
 .about-item:not(:last-child) {
   margin-right: 24px;
@@ -489,10 +481,9 @@ nav {
 .customers-item {
   width: calc((100% - 120px) / 6);
   height: 88px; 
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
  }
-.customers-item:hover {
-}
+
 .customers-link {
 
   height: 100%;
