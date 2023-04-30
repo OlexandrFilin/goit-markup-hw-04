@@ -20,6 +20,7 @@
   --color-btn-secondary: #ffffff;
   --background-btn-secondary: #4d5ae5;
   --color-border-hader: #e7e9fc;
+  --fill-social-icon:#f4f4fd;
   --background-color-social: #4d5ae5;
   --color-social-icon: #f4f4fd;
   --background-color-social-activ: #404bbf;
@@ -313,8 +314,8 @@ nav {
 
 
 .about-svg {
-   width: 64px;
-  height: 64px;
+   /* width: 64px;
+  height: 64px; */
 }
 /* delete */
 .icon {
@@ -354,7 +355,7 @@ nav {
 /*--------------------section4 You team ----------------------------------------------------------------------------*/
 .section-ourteam {
   background-color: var(--background-color-ourteam); /* : #F4F4FD; */
-  height: 732px;
+  
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -369,7 +370,7 @@ nav {
 
 .ourteam-list-item {
   width: 264px;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
   /* height: 380px; */
   background-color: var(--background-color); /* #ffffff; */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -382,6 +383,7 @@ nav {
 .ourteam-paragraf {
   font-size: 16px;
   text-align: center;
+  padding-bottom: 8px;
 }
 .ourteam-img {
   /* margin-bottom: 32px; */
@@ -407,10 +409,11 @@ nav {
 }
 .socialnet-list {
   display: flex;
+  justify-content: center; 
   /* margin: o auto; */
   height: 40px;
   gap: 24px;
-  /* justify-content: space-around; */
+  /* space-around; */
   /* justify-content: space-evenly; */
 }
 
@@ -422,12 +425,10 @@ nav {
   height: 40px;
   /* background-color: blue; */
 }
-.socialnet-item > a {
-  /* padding: 12px; */
-}
+
 .social-link {
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -446,9 +447,10 @@ nav {
 }
 .socialnet-svg {
   /* margin: 0 auto; */
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
+  /* width: 16px;
+  height: 16px; */
+  /* fill: currentColor; */
+  fill:var(--fill-social-icon);
 }
 
 .socialnet-icon {
@@ -456,50 +458,67 @@ nav {
   height: 16px; */
 }
 
-/* -------------------section4 You team -------------- */
+/* -------------------section  Customers -------------- */
+
+.sectoin-customers {
+   padding: 120px 0;
+}
 .customers-div {
-  padding: 120px 0;
+ 
+}
+.header-customers {
+  margin-bottom: 72px;
 }
 .customers-list {
   display: flex;
-  padding-top: 72px;
+  /* padding-top: 72px; */
   gap: 24px;
 }
 .customers-item {
   width: 168px;
   height: 88px;
   padding: 16px 32px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
+  /* border: 1px solid #8e8f99; */
+  
 }
 .customers-item:hover {
 }
 .customers-link {
-  /* background-color: var(--background-color-customers); */
+  color:#8e8f99 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* background-color: var(--background-color-customers);  */
+width: 100%;
+height: 100%;
+border: 1px solid #8e8f99;
+border-radius: 4px;
 }
-
+.customers-link:hover {
+  background-color: var(--background-color-customers-activ);
+ 
+}
 .customers-svg {
-  width: 104px;
-  height: 56px;
-  fill: var(--background-color-customers);
+  
+  fill: currentColor;
   /* fill: currentColor; */
 }
-.customers-svg:hover {
-  fill: var(--background-color-customers-activ);
-  /* stroke: red;  */
-}
+
 .customers-icon {
   width: 54px;
   height: 56px;
 }
 /*---------------------------- footer -------------------------------------------------------------------------------------*/
 .footer {
+ 
   background-color: var(--header-color);
   padding-top: 100px;
   padding-bottom: 100px;
+  
 }
 .footer-div {
   display: flex;
+  align-items: baseline;
 }
 .footerleft-div {
   margin-right: 120px;
@@ -541,25 +560,20 @@ nav {
   /* justify-content: space-around; */
   /* justify-content: space-evenly; */
 }
-.footer-social-heder {
-  padding-bottom: 16px;
+.footer-social-paragraph {
+  /* padding-bottom: 16px; */
+ margin-bottom: 16px; 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-
+  line-height: 15px;
   letter-spacing: 0.02em;
-
-  /* WHITE */
-
   color: var(--color-herotitle);
+  
 }
 
-.footer-socialnet-icon {
-  /* padding-right: 16px; */
-}
+
 
 /* --!!!!!!!!!!!!!!!!!!!!!!!!!!!-portfolio --!!!!!!!!!!!!!!!!!!!!!--------------*/
 /* --------section works --------------- */
